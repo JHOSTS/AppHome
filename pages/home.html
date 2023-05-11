@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c411e7e344.js" crossorigin="anonymous"></script>
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+</head>
+<body onload="page_Load();">
+    <nav>
+        <ul>
+            <li>
+                <a href="home.html" > Home </a>
+            </li>
+            <li>
+                <a href="lembretes.html" > Lembretes </a>
+            </li>
+            <li>
+                <a href="seriesfilmes.html"> Séries/Filmes </a>
+            </li>
+            <li>
+                <a href="contas.html"> Contas </a>
+            </li>
+        </ul>
+    </nav>
+    <main id="container-home">
+        <div id="divClima">
+            <div id="weatherHead">
+                <input type="text" id="inputCidade"></input>
+                <button id="btoPesquisarClima" name="btoPesquisarClima">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                </div>
+                <div id="weatherData">
+                    <h2>
+                        <p id="lblTemperatura"><span></span></p>
+                        <!-- <i id="imgClima" class="fa-solid fa-cloud" ></i> -->
+                    </h2>
+                    <h2>
+                        <span id="lblCidade"> </span>
+                    </h2>
+                <div id="divDescricao">
+                    <p id="descricao"></p>
+                    <img src="" id="weatherIcon">
+                </div>
+                <div id="divDetalhes">
+                    <p id="umidade">
+                        
+                        <span></span>
+                    </p>
+                    <p id="vento">
+                        <i class="fa-solid fa-wind"></i>
+                        <span></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../assets/js/home.js"></script>
+</body>
+</html>

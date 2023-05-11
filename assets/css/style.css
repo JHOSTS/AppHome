@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Orbitron:wght@900&family=Paytone+One&display=swap');
+
+:root{
+
+    --color-light-50: #f8fafc;
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000; 
+    
+    --color-purple-50: #7c3aed;
+    --color-purple-100: #a855f7;
+    --color-purple-200: #bf46ef;
+    --color-purple-300: #7f5591;
+
+    
+    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+    --color-degradient: linear-gradient(90deg, var(--color-purple-200), var(--color-purple-100), var(--color-purple-50));
+    
+}
+
+*{
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: var(--color-gradient);
+    color: var(--);
+}
+
+input {
+    font-family: sans-serif;
+    
+}
+
+/* Login */
+#container {
+    height: 100vh;
+    width: 100%;
+    background: var(--color-gradient);
+    display: flex;
+    justify-content: center;
+}
+
+#login_form {
+    background-color: var(--color-light-50);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    border-radius: 8px;
+    height: 7%;
+    width: 20%;
+    gap: 30px;
+    box-shadow:  5px 5px 8px rgba(0,0,0,0.336);
+    animation: dark-to-light 0.3s ease-in-out;
+    margin-top: 10%;
+}
+
+#form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20%;
+}
+
+#form_header h1 { 
+    font-size: 40px;
+    position: relative;
+    margin-top: -24%;
+    margin-left: 25%;
+}
+
+#form_header h1::before {
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 3px;
+    bottom: 10px;
+    border-radius: 5px;
+} 
+
+#mode_icon {
+    cursor: pointer;
+    size: 45px;
+    margin-bottom: -2%;
+    margin-left: 10%;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+input-box label {
+    font-size: 14px;
+    color: var(--color-dark-50);
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    cursor: text;
+    border-bottom: 1px solid var(--color-purple-50);
+}
+
+.input-field i {
+    font-size: 18px;
+    color: var(--color-dark-900);
+}
+
+.input-field input {
+    border: none;
+    background-color: transparent;
+    width: 260px;
+    font-size: 18px;
+    padding: 0px 5px;    
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+#login_button {
+    border: none;
+    background-color: var(--color-purple-50);
+    color: var(--color-light-50);
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+    margin-left: 30%;
+}
+
+#login_button:hover {
+    transform: scale(1.05);
+}
+
+.dark#login_form {
+    color: var(--color-light-50);
+    background-color: var(--color-dark-100);
+    animation: light-to-dark 0.3s ease-in-out;
+}
+
+.dark#login_form .input-field input,
+.dark#login_form .input-field i {
+    color: var(--color-light-50);
+}
+
+@keyframes dark-to-light {
+    0%{
+        background-color: var(--color-dark-100);
+    }
+
+    100% {
+        background-color: var(--color-light-50);
+    }
+}
+
+@keyframes light-to-dark {
+    
+    0% {
+        background-color: var(--color-light-50);
+    }
+
+    100%{
+        background-color: var(--color-dark-100);
+    }
+}
+
+/* Home */
+body{
+    background: var(--color-gradient);
+}
+
+#container-home {
+    height: 100vh;
+    width: 100%;
+    background: var(--color-gradient);
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+#btoPesquisarClima {
+    background-color: transparent;
+    border: none;
+    padding-left: 2%;
+}
+
+#btoPesquisarClima:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+#inputCidade {
+    width: 90%;
+    padding: 7%;
+    outline: none;
+    background-color: var(--color-light-50);
+    border-radius: 10px;
+    border: 0px;
+}
+
+
+
+nav {
+    background-color: #4b3050;
+}
+
+nav a:hover{
+    color: var(--color-degradient);
+    transform: scale(1.5);
+}
+
+a {
+    color: var(--color-light-50);
+    text-decoration: none;
+}
+
+#divClima {
+    background-color: #aa90b638;
+    border: none;
+    width: 17%;
+    height: 35%;
+    border-radius: 12px;
+    margin-top: 2%;
+    margin-left: 3%;
+    padding: 2%;
+}
+
+#weatherData {
+    border-top: 1px solid var(--color-light-50);
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+}
+
+#weatherData h2 {
+    display:flex;
+    align-items: center;
+    align-content: center;
+}
+
+.hide {
+    display: none;
+}
+
+#cidade{
+    padding-right: 12%;
+}
+
+#temperatura {
+    padding-left: 20%;
+}
+
+
+/* Lembrete */
+#container-lembrete {
+    height: 100vh;
+    width: 100%;
+    background: var(--color-gradient);
+}
+
+#corpo_lembrete {
+    background-color: var(--color-dark-50);
+    margin: 0 auto;
+    color: var(--color-gradient);
+    width: 100%;
+    max-width: 450px;
+    margin: 50px;
+    padding: 2%;
+    border-radius: 12px;
+    justify-content: space-between;
+}
+
+#div-topolembrete {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2%;
+}
+
+#body-lembrete {
+    background-color: var(--color-purple-100);
+    
+}
+
+
+input {
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+#txtlembrete {
+    width: 90%;
+    padding: 2%;
+    outline: none;
+    background-color: var(--color-light-50);
+    border-radius: 10px;
+    border: 0px;
+}
+
+.botaoadicionar {
+    border-radius: 20%;
+    width: 8%;
+    border: 0px solid #000;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--color-light-50);
+}
+
+.botaoadicionar:hover {
+    background: #9b9a9a;
+    width: 5%;
+}
+
+.btnacao {
+    background-color: var(--color-dark-100);
+    border: 0px solid #000;
+    width: 60%;
+    cursor: pointer;
+    color: var(--color-dark-50);
+    border-radius: 20%;
+}
+
+.botaoapagar {
+    background-color: var(--color-dark-100);
+    border-radius: 20%;
+    width: 60%;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.2);
+    background: #4040414b;
+}
+
+.li:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+#listalembrete {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listalembrete li {
+    background-color: var(--color-dark-100);
+    padding: 2%;
+    width: 35%;
+    margin: 50px;
+    border-radius: 10px;
+    color: var(--color-light-50);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+#janelaEdicaoLembrete {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 7%;
+    background: #191818;
+    border: 1px solid #2f2e2e;
+    width: 415px;
+    border-radius: 6%;
+    z-index: 200;
+    display: none;
+    color: var(--color-light-50);
+}
+
+#janelaEdicaoLembrete.abrir {
+    display: block !important;
+}
+
+#janelaEdicaoFundo {
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.85;
+    z-index: 100;
+    right: 0;
+    display: none;
+}
+
+#janelaEdicaoFundo.abrir {
+    display: block !important;
+}
+
+#btoFecharJanelaEdicao {
+    position: absolute;
+    top: -2%;
+    right: -2%;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    border: 1px solid #2d2c2c;
+    background: #2d2c2c;
+    color: var(--color-light-50);
+    outline: none;
+}
+
+#inputLembreteNomeEdicao {
+    width: 100%;
+    padding: 7%;
+    outline: none;
+    background-color: var(--color-light-50);
+    border-radius: 10px;
+    border: 0px;
+}
+
+form {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.frm-linha {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5%;
+}
+
+.frm-linha label {
+    margin-bottom: 5%;
+}
+
+.frm-linha input {
+    padding: 8%;
+    border-radius: 10%;
+    outline: none;
+    border: 1px solid #191818;
+    background: #2d2c2c;
+    width: 100%;
+}
+
+.frm-linha button {
+    background: #2d2c2c;
+    border: 1px solid #191818;
+    padding: 3%;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    cursor: pointer;
+    color: var(--color-light-50);
+    outline: none;
+}
+
+.textolembrete {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+    white-space: nowrap;
+}
+
+/* Filmes e Séries */
+#container-filmeserie {
+    height: 100vh;
+    width: 100%;
+    background: var(--color-gradient);
+}
+
+form {
+    margin: 2%;
+    margin-left: 5%;
+    width: 60%;
+    height: 10%;
+    display: flex;
+}
+
+form input#pesquisa {
+    padding:2% ;
+    display: flex;
+    width: 25%;
+    height: 40%;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #2d2c2c;
+    margin-top: 1%;
+    color: #000;
+}
+
+#btoPesquisar {
+    margin-top: 2.5%;
+    margin-left: 1%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    cursor: pointer;
+}
+
+div.listafilme {
+    padding-left: 2%;
+    display: flex;
+    margin-left: 2%;
+    flex-wrap: wrap;
+}
+
+div.item {
+    text-align: center;
+    width: 15%;
+    padding-left: 1%;
+    margin-right: 0.5%;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+div.item :hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+div.item img {
+    width: 100%;
+}
+
+/* Filmes - Paginação */
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.page{
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--color-dark-900);
+    background-color: var(--color-dark-50);
+    margin-right: 4px;
+}
+
+.page.active {
+    background-color: var(--color-dark-100);
+    color: var(--color-purple-100);
+}
+
+.prev,
+.next {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--color-dark-900);
+    background-color: var(--color-dark-50);
+    margin-right: 4px;
+}
+
+.prev:hover,
+.next:hover,
+.page:hover,
+.page button:hover {
+    background-color: #f2f2f2;
+}
+
+.page button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

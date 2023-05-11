@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c411e7e344.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+
+    <title>Lembretes</title>
+</head>
+<body id="body-lembrete">
+    <nav>
+        <ul>
+            <li>
+                <a href="home.html" > Home </a>
+            </li>
+            <li>
+                <a href="lembretes.html" > Lembretes </a>
+            </li>
+            <li>
+                <a href="seriesfilmes.html"> Séries/Filmes </a>
+            </li>
+            <li>
+                <a href="contas.html"> Contas </a>
+            </li>
+        </ul>
+    </nav>
+    <main id="container-lembrete">
+        <div>
+        <div id="lembrete">
+            <div id="corpo_lembrete">
+                <div id="div-topolembrete">
+                    <label id="lbllembrete"> Adicionar um lembrete </label>
+                </div>
+            <div>
+                <input type="text" 
+                name="txtlembrete"
+                id="txtlembrete"
+                placeholder="Insira o lembrete">
+                <button id="btoadicionarlembrete" class="botaoadicionar">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </div>
+
+        </div>
+            <div>
+                <ul id="listalembrete">
+                </ul>
+            </div>
+        </div>
+
+        <div id="janelaEdicaoLembrete">
+            <button id="btoFecharJanelaEdicao">
+                <i class="fa fa-remove"></i>
+            </button>
+            <h2 id="lembreteEdicao"></h2>
+            <hr>
+            <form> 
+                <div class="frm-linha">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="inputLembreteNomeEdicao">
+                </div>
+                <div class="frm-linha">
+                    <button id="btoAtualizarTarefa"> Salvar </button>
+                </div>
+            </form>
+        </div>
+        <div id="janelaEdicaoFundo"></div>
+    </main> 
+    <script src="../assets/js/lembretes.js"></script>
+</body>
+</html>
